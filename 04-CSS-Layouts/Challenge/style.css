@@ -14,6 +14,15 @@ body {
   width: 800px;
   margin: 50px auto;
   position: relative;
+
+  display: grid;
+  grid-template-columns: 240px 1fr 1fr;
+  column-gap: 40px;
+  align-items: center;
+}
+
+.product-introduction {
+  grid-column: 1 / -1;
 }
 
 .product-title {
@@ -38,20 +47,6 @@ body {
   position: absolute;
   top: -18px;
   left: -36px;
-}
-
-.product-box {
-  display: flex;
-  align-items: center;
-  gap: 40px;
-}
-
-.product-image {
-  flex: 1;
-}
-
-.info-box {
-  flex: 1;
 }
 
 .costs {
@@ -142,6 +137,8 @@ body {
   padding: 15px;
   width: 100%;
   border-top: 5px solid #000;
+
+  grid-column: 1 / -1;
 }
 
 .add-cart:hover {
